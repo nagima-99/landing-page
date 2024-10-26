@@ -549,7 +549,10 @@ button[type="submit"]:hover {
   .hidden-image {
     display: none;
   }
-
+  
+  .project__images img{
+    max-width: 300px;
+  }
   .contact__content {
     flex-direction: column;
     align-items: center;
@@ -559,12 +562,6 @@ button[type="submit"]:hover {
   }
 }
 
-@media (max-width: 1024px) {
-
-  .hidden-image {
-    display: none;
-  }
-}
 @media (max-width: 480px) {
   h2 {
     font-size: 2rem;
