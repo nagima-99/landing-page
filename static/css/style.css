@@ -468,7 +468,6 @@ button[type="submit"]:hover {
     align-items: flex-start;
     justify-content: flex-start;
     padding: 20px;
-    overflow-y: hidden;
   }
 
   .header__nav.active .menu-icon {
@@ -559,6 +558,10 @@ button[type="submit"]:hover {
   }
   img[alt="message"] {
     display: none;
+  }
+
+  .no-scroll {
+    overflow: hidden;
   }
 }
 

@@ -189,13 +189,16 @@
         const closeIcon = document.getElementById('close');
         const navMenu = document.querySelector('.header__nav');
         const links = document.querySelectorAll('.header__link');
-
+        const body = document.body;
+        
         menuIcon.addEventListener('click', () => {
             navMenu.classList.add('active');
+            body.classList.add('no-scroll');
         });
 
         closeIcon.addEventListener('click', () => {
             navMenu.classList.remove('active');
+            body.classList.remove('no-scroll');
         });
 
         links.forEach(link => {
