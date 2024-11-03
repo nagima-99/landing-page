@@ -1,25 +1,27 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>landing-page</title>
     <link rel="stylesheet" href="static/css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
     <header class="header">
         <div class="container">
             <div class="header__inner">
-                <a href="#" class="header__logo"><span class="header__logo-text">NAG</span>IMA</a>
+                <a href="#" class="header__logo">NAG<span class="header__logo-text">IMA</span></a>
                 <div class="menu-icon" id="menu-icon">
                     <i class="fa-solid fa-bars"></i>
                 </div>
                 <nav class="header__nav">
                     <ul class="header__menu">
+                        <li class="header__item"><a href="#welcome" class="header__link">Главная</a></li>
                         <li class="header__item"><a href="#education" class="header__link">Образование</a></li>
                         <li class="header__item"><a href="#projects" class="header__link">Проекты</a></li>
                         <li class="header__item"><a href="#achievements" class="header__link">Достижения</a></li>
@@ -30,21 +32,22 @@
             </div>
         </div>
     </header>
-
-    <main>
-        <section class="welcome">
+    
+    <main class="main">
+        <section id="welcome" class="welcome">
             <div class="container">
-                <div class="welcome-content">
-                    <h2>Добро пожаловать!</h2>
+                <div class="welcome__content">
+                    <h1>Добро пожаловать!</h1>
                     <p><span class="welcome__name">Меня зовут Нагима,</span> и я рада видеть вас на своем сайте!</p>
-                    <p>Этот сайт — отражение моих интересов и опыта, которым хочу поделиться с вами. Здесь вы найдете информацию о моем образовании, проектах и достижениях.</p>
+                    <p>Этот сайт — отражение моих интересов и опыта, которым хочу поделиться с вами. Здесь вы найдете
+                        информацию о моем образовании, проектах и достижениях.</p>
                 </div>
                 <div class="welcome__image">
                     <img src="static/img/avatar.jpg" alt="avatar">
                 </div>
             </div>
         </section>
-        
+
         <section id="education" class="education">
             <div class="container">
                 <h2>Образование</h2>
@@ -76,36 +79,40 @@
 
                         <div class="project__images">
                             <img src="static/img/telegram_work.png" alt="Telegram screen">
-                            <img src="static/img/telegram.png" alt="Telegram" class="hidden-image">
+                            <img src="static/img/telegram.png" alt="Telegram">
                         </div>
                         <p>Проект: <strong>Телеграм-бот с использованием Fake Store API</strong></p>
-                        <p>Описание: Этот бот предоставляет доступ к спискам продуктов и категорий, используя Fake Store API. Пользователь может выбирать категории и получать информацию о продуктах прямо в Telegram.</p>
+                        <p>Описание: Этот бот предоставляет доступ к спискам продуктов и категорий, используя Fake Store
+                            API. Пользователь может выбирать категории и получать информацию о продуктах прямо в
+                            Telegram.</p>
                         <a href="https://web.telegram.org/k/#@OnlineFakeStoreBot" target="_blank" class="project__link">
                             <button type="button">Подробнее</button>
                         </a>
                     </div>
-        
+
                     <div class="project__item">
                         <h3>AudioTextify</h3>
                         <div class="project__images">
                             <img src="static/img/audiotextify_work.png" alt="AudioTextify screen">
-                            <img src="static/img/audiotextify.png" alt="AudioTextify" class="hidden-image">
+                            <img src="static/img/audiotextify.png" alt="AudioTextify">
                         </div>
                         <p>Проект: <strong>Веб-приложение для преобразования аудио в текст</strong></p>
-                        <p>Описание: Приложение преобразует аудиофайлы в текст с использованием Python и Flask. В основе проекта лежат библиотеки SpeechRecognition и langid для работы с аудио.</p>
+                        <p>Описание: Приложение преобразует аудиофайлы в текст с использованием Python и Flask. В основе
+                            проекта лежат библиотеки SpeechRecognition и langid для работы с аудио.</p>
                         <a href="https://github.com/nagima-99/AudioTextify" target="_blank" class="project__link">
                             <button type="button">Подробнее</button>
                         </a>
                     </div>
-        
+
                     <div class="project__item">
                         <h3>CRM-system</h3>
                         <div class="project__images">
                             <img src="static/img/crm_work.png" alt="CRM screen">
-                            <img src="static/img/crm.png" alt="CRM" class="hidden-image">
+                            <img src="static/img/crm.png" alt="CRM">
                         </div>
                         <p>Проект: <strong>CRM-система для управления процессами в учебных заведениях</strong></p>
-                        <p>Описание: Система поддерживает работу трех типов пользователей: администратора, преподавателя и ученика, с возможностью управления расписанием, учетными записями.</p>
+                        <p>Описание: Система поддерживает работу трех типов пользователей: администратора, преподавателя
+                            и ученика, с возможностью управления расписанием, учетными записями.</p>
                         <a href="https://github.com/nagima-99/crm" target="_blank" class="project__link">
                             <button type="button">Подробнее</button>
                         </a>
@@ -113,7 +120,7 @@
                 </div>
             </div>
         </section>
-        
+
 
         <section id="achievements" class="achievements">
             <div class="container">
@@ -122,24 +129,25 @@
                     <div class="achievement__item">
                         <i class="fa-solid fa-graduation-cap"></i>
                         <h3>Онлайн курс от Coursera</h3>
-                        <p> Успешное завершение онлайн-курса по "Программирование для всех (начала работы с Python)" на платформе Coursera.</p>
+                        <p> Успешное завершение онлайн-курса по "Программирование для всех (начала работы с Python)" на
+                            платформе Coursera.</p>
                     </div>
-        
+
                     <div class="achievement__item">
                         <i class="fa-solid fa-robot"></i>
                         <h3>Олимпиада по робототехнике</h3>
                         <p>1 место на олимпиаде по робототехнике среди студентов университета.</p>
                     </div>
-        
+
                     <div class="achievement__item">
                         <i class="fa-brands fa-python"></i>
                         <h3>Курс по Python</h3>
                         <p> Успешное завершение курса по Python-разработчика.</p>
                     </div>
-        
-            </div>
+
+                </div>
         </section>
-        
+
 
         <section id="contact" class="contact">
             <div class="container">
@@ -149,13 +157,13 @@
                         <form action="/feedback" method="POST">
                             <label for="name">Имя:</label>
                             <input type="text" id="name" name="name" required>
-                            
+
                             <label for="email">Email:</label>
                             <input type="email" id="email" name="email" required>
-                            
+
                             <label for="message">Сообщение:</label>
                             <textarea id="message" name="message" required></textarea>
-                            
+
                             <button type="submit">Отправить</button>
                         </form>
                     </div>
@@ -175,7 +183,7 @@
                     </div>
                 </div>
             </div>
-        </section>        
+        </section>
     </main>
 
     <footer class="footer">
@@ -200,10 +208,11 @@
 
         links.forEach(link => {
             link.addEventListener('click', () => {
-            navMenu.classList.remove('active');
+                navMenu.classList.remove('active');
             });
         });
     </script>
-    
+
 </body>
+
 </html>
