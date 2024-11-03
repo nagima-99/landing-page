@@ -557,6 +557,7 @@ p {
   img[alt="message"] {
     display: none;
   }
+
 }
 
 @media (max-width: 480px) {
